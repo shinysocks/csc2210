@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[accept input from file]
     A --> B[read line] -->
@@ -7,3 +8,4 @@ flowchart TD
     --> D{more input?}
     D -->|yes| B
     D -->|no| C[output final fluid differential]
+```
