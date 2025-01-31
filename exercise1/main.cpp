@@ -3,13 +3,8 @@ using namespace std;
 
 int main() {
     int n;
-    cout << n;
-    cout << "Enter a number: ";
+    cout << "Enter an integer: ";
     cin >> n;
-    cout << "The cube of ";
-    cout << n;
-    cout << " is ";
-    cout << n * n;
+    cout << "The cube of " << n << " is " << n * n * n;
     return 0;
 }
-
