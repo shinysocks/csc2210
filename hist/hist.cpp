@@ -13,18 +13,17 @@ int max(int nums[], int n) {
 int min(int nums[], int n) {
     int min = nums[0];
     for (int i = 1; i < n; i++) {
-        min = (nums[i] > min) ? nums[i] : min;
+        min = (nums[i] < min) ? nums[i] : min;
     }
     return min;
-}
+} 
 
-void generateFrequency(int nums[], int n, int frequency[]) {
+string bar(int nums[], int n, int value) {
+    string bar = "";
     for (int i = 0; i < n; i++) {
-        frequency[i] = 1;
-        for (int j = i + 1; j < n; j++) {
-            frequency[i] += (nums[i] == nums[j]) ? 1 : 0;
-        }
+        bar += (value == nums[i]) ? "#" : "";
     }
+    return bar;
 }
 
 int main() {
@@ -39,7 +38,6 @@ int main() {
     }
 
     int nums [size];
-    int frequency [size];
 
     cout << "Enter the numbers: " << endl;
     for (int i = 0; i < size; i++) {
@@ -49,11 +47,28 @@ int main() {
     int maximum = max(nums, size);
     int minimum = min(nums, size);
 
-    generateFrequency(nums, size, frequency);
+    int max = 0;
 
-    for (int i = 0; i < size; i++) {
-        cout << frequency[i] << " ";
+    for (int i = maximum; i >= minimum; i--) {
+        string b = bar(nums, size, i);
+        max = (b.size() > max) ? b.size() : max;
+        cout << i << "   |" << b << endl;
     }
 
-}
+    cout << "    +";
 
+    int width = 0;
+
+    for (int i = 0; i < max / 10.0; i++) {
+        width++;
+        cout << "----+----+";
+    }
+
+    cout << endl << "    ";
+
+    for (int i = 0; i <= width * 2; i++) {
+        cout << i * 5 << "    ";
+    }
+
+    cout << endl;
+}
