@@ -1,4 +1,4 @@
 .SILENT:
 all:
 	g++ *.cpp -g -o main
-	./main
+	cat test.txt | ./main

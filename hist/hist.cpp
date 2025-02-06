@@ -2,6 +2,10 @@
 
 using namespace std;
 
+const int MAX_SIZE = 1000;
+const int NINE = 9;
+const double FIVE_WIDTH = 5.0;
+
 int max(int nums[], int n) {
     int max = nums[0];
     for (int i = 1; i < n; i++) {
@@ -32,7 +36,7 @@ int main() {
     cout << "Enter the number of elements: ";
     cin >> size;
 
-    if (size < 0 || size > 1000) {
+    if (size < 0 || size > MAX_SIZE) {
         cout << "Invalid input size. Please enter a value between 1 and 1000." << endl;
         return 1;
     }
@@ -52,22 +56,22 @@ int main() {
     for (int i = maximum; i >= minimum; i--) {
         string b = bar(nums, size, i);
         max = (b.size() > max) ? b.size() : max;
-        cout << i << "   |" << b << endl;
+        cout << i << ((i > NINE) ? "  |" : "   |") << b << endl;
     }
 
     cout << "    +";
 
     int width = 0;
 
-    for (int i = 0; i < max / 10.0; i++) {
+    for (int i = 0; i < max / FIVE_WIDTH; i++) {
         width++;
-        cout << "----+----+";
+        cout << "----+";
     }
 
     cout << endl << "    ";
 
-    for (int i = 0; i <= width * 2; i++) {
-        cout << i * 5 << "    ";
+    for (int i = 0; i <= width; i++) {
+        cout << i * FIVE_WIDTH << (i * 5 > NINE ? "   " : "    ");
     }
 
     cout << endl;
