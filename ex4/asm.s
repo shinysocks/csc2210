@@ -2,6 +2,8 @@
 # Exercise 4
 # February 17
 
+.data
+.text
 .global main
 # 3x^3 - 2x^2 + (x - 1)
 main:

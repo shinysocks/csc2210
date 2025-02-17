@@ -1,4 +1,4 @@
 .SILENT:
 all:
-	gcc *.s -no-pie -o main
+	gcc *.s -no-pie -z noexecstack -o main
 	./main
