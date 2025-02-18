@@ -3,11 +3,15 @@
 # February 17
 
 .data
-.text
+num:
+    .ascii "42"
+
 .global main
+.text
+
 # 3x^3 - 2x^2 + (x - 1)
 main:
-    mov  $-4, %eax    # put 4 in eax
+    mov  $4, %eax    # put 4 in eax
     mov  %eax, %edx
     mov  %eax, %ecx
     mov  %eax, %ebx
@@ -24,5 +28,14 @@ main:
     sub  %ecx, %ebx
     add  %edx, %ebx
 
-    mov  %ebx, %eax   # mov back to return register (eax)
+    # attempt to output %ebx to STDOUT
+    mov $1, %rax     # set call code to 1 (SYS_WRITE)
+    mov $1, %rdi     # set output location to destination index (STDOUT)
+    mov $num, %rbx
+    mov %rbx, %rsi
+    mov $8, %rdx     # number of bytes to output
+    syscall
+
+    # return
+    mov $0, %rax
     ret
