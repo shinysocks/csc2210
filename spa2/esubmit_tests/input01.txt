@@ -1,4 +1,0 @@
-point
-END
-peace
------
