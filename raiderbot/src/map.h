@@ -1,7 +1,7 @@
 /*
  * map.h
  *
- *      Author: [[TODO]]
+ *      Author: Noah Dinan
  */
 
 #ifndef MAP_H_
@@ -14,14 +14,17 @@ class MapCell;
 // Note you will need to add declarations for the height and width.
 // Add other methods and data as needed.
 class Map {
-  MapCell *cells[WIDTH][HEIGHT];
+    const static int WIDTH = 20;
+    const static int HEIGHT = 10;
+
+    MapCell *cells[WIDTH][HEIGHT]; 
 public:
-  // initialize empty map
-  Map();
-  // read the map from cin
-  void load();
-  // write the full map to cout
-  void write();
+    // initialize empty map
+    Map();
+    // read the map from cin
+    void load();
+    // write the full map to cout
+    void write();
 };
 
 #endif /* MAP_H_ */
