@@ -36,6 +36,8 @@ class MapCell {
         void enter();
         // robot leaves location
         void vacate();
+    private:
+        char prev_token;
 };
 
 #endif /* CELL_H_ */

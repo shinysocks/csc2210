@@ -14,11 +14,12 @@ class MapCell;
 // Note you will need to add declarations for the height and width.
 // Add other methods and data as needed.
 class Map {
-    const static int WIDTH = 20;
-    const static int HEIGHT = 10;
-
-    MapCell *cells[WIDTH][HEIGHT]; 
 public:
+    int WIDTH = 20;
+    int HEIGHT = 10;
+
+    MapCell *cells[20][10]; 
+
     // initialize empty map
     Map();
     // read the map from cin

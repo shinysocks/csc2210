@@ -1,4 +1,4 @@
 .SILENT:
 all:
 	g++ -Wall ./src/* -g -o main
-	cat tests/1.in | ./main
+	cat tests/7.in | ./main

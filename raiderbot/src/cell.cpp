@@ -36,11 +36,14 @@ char MapCell::display() {
 }
 
 void MapCell::enter() {
+    if (hasGold()) prev_token = ' ';
+    else prev_token = display();
     token = 'R';
 }
 
 void MapCell::vacate() {
-    token = ' ';
+    token = prev_token;
+    prev_token = ' ';
 }
 
 
