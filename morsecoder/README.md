@@ -1,32 +1,40 @@
+## compiling
+first compile raylib following the instructions below:
+* [Compiling for GNU Linux](https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux)
+* [Compiling For Windows](https://github.com/raysan5/raylib/wiki/Working-on-Windows)
+
+once raylib has been installed on the target system, the project can be run:
+```
+make
+```
+
 ## uml
 ```mermaid
----
-title: morsecoder
----
 classDiagram
 
-class Person {
-    -keyFrames
-    -animate_dot(bool)
-    +sing_letter(char)
-    +listening()
-}
+class Window {
+    -WIDTH
+    -HEIGHT
+    -SPACE_TEXT
+    -DOT
+    -DASH
+    -INVALID_CODE
+    -is_dot
+    -countdown_timer
+    -decoded_char
+    -message
 
-class Cat {
-    -keyFrames
-    +animate()
-}
-
-class Sound {
-    -dot_sound
-    -dash_sound
-    +play_dot(bool)
+    +Window()
+    +render()
+    +is_symbol_dot(bool)
+    +set_countdown(int, char)
+    +set_message(char*)
 }
 
 class Node {
-    -data
-    -left
-    -right
+    +data
+    +left
+    +right
     +Node(E)
     +Node(E, Node, Node)
 }
