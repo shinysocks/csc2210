@@ -7,6 +7,7 @@ class Node {
         char data;
         Node(char);
         Node(char, Node*, Node*);
+        ~Node();
 };
 
 class MorseTree {

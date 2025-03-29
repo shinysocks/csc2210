@@ -15,19 +15,15 @@ class Window {
         char* message;
 
     public:
-        // call InitWindow()
         Window();
+        ~Window();
 
         /* 
          * wraps raylib rendering.. call BeginDrawing(); ClearBackground();
          * draw everything; call EndDrawing()
          */
         void render();
-
         void is_symbol_dot(bool);
-
-        // draw_countdown
         void set_countdown(int, char);
-
         void set_message(const char*);
 };

@@ -10,6 +10,11 @@ Node::Node(char c) {
     Node(c, nullptr, nullptr);
 }
 
+Node::~Node() {
+    delete left;
+    delete right;
+}
+
 MorseTree::MorseTree() {
     root = new Node('\0');
 }

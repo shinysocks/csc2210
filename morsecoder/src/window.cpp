@@ -8,6 +8,14 @@ Window::Window() {
     message = (char*) s.c_str();
 }
 
+Window::~Window() {
+    delete SPACE_TEXT;
+    delete DOT;
+    delete DASH;
+    delete INVALID_CODE;
+    delete message;
+}
+
 void Window::render() {
     BeginDrawing();
     ClearBackground(BLACK);
