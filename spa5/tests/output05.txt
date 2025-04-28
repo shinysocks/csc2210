@@ -1,0 +1,5 @@
+after consuming soup at 12:15, intake exceeds output by 1215 ml
+after consuming color_of_magic_popsickle_with_superkalif at 2:10, intake exceeds output by 1245 ml
+after consuming crushed_ice at 2:15, intake exceeds output by 1295 ml
+after consuming soda at 3:15, intake exceeds output by 1095 ml
+the final fluid differential is 345 ml

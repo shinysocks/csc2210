@@ -1,0 +1,47 @@
+Enter a polynomial over x, q to terminate:
+Enter a second polynomial over x:
+
+The sum:
+  0 - 20234x19
++ 0 + 134324x19
+--------------------------------------------------
+0 + 114090x19
+
+Enter a polynomial over x, q to terminate:
+Enter a second polynomial over x:
+
+The sum:
+  1 - 14x1 + 123123x3 + 18x8
++ -23 + 2x1 - 14x7 - 43x9 - 20x15
+--------------------------------------------------
+-22 - 12x1 + 123123x3 - 14x7 + 18x8 - 43x9 - 20x15
+
+Enter a polynomial over x, q to terminate:
+Enter a second polynomial over x:
+
+The sum:
+  13423423 - 12423423x7 + 123233x13
++ -125434 + 23524534x7 - 235135344x13
+--------------------------------------------------
+13297989 + 11101111x7 - 235012111x13
+
+Enter a polynomial over x, q to terminate:
+Enter a second polynomial over x:
+
+The sum:
+  9 - 5x1 - 18x2 + 9x9 + 13x18
++ 23423 - 4x2 - 14x3 + 123x5 + 16x16
+--------------------------------------------------
+23432 - 5x1 - 22x2 - 14x3 + 123x5 + 9x9 + 16x16 + 13x18
+
+Enter a polynomial over x, q to terminate:
+Enter a second polynomial over x:
+
+The sum:
+  1 + 14x17
++ 0
+--------------------------------------------------
+1 + 14x17
+
+Enter a polynomial over x, q to terminate:
+Bye!

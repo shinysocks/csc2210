@@ -1,0 +1,21 @@
+2:00 punch 1125
+2:45 urine 625
+2:50 coffee 800
+3:30 bloodloss 35
+4:30 bloodloss 50
+4:45 diarrhea 750
+5:00 iv 450
+5:10 diarrhea 500
+5:30 iv 725
+5:45 coffee 525
+6:05 urine 700
+6:10 iv 40
+6:23 bloodloss 20
+6:30 popsickle 14
+7:00 urine 341
+7:30 oj 200
+7:40 bloodloss 15
+8:00 urine 635
+8:30 water 500
+9:00 urine 800
+

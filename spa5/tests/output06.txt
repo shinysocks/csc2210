@@ -1,0 +1,6 @@
+after consuming punch at 2:00, intake exceeds output by 1125 ml
+after consuming coffee at 2:50, intake exceeds output by 1300 ml
+after consuming iv at 5:30, intake exceeds output by 1140 ml
+after consuming coffee at 5:45, intake exceeds output by 1665 ml
+after consuming iv at 6:10, intake exceeds output by 1005 ml
+the final fluid differential is -92 ml

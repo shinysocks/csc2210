@@ -1,0 +1,3 @@
+after consuming soup at 15:30, intake exceeds output by 1000 ml
+after consuming coffee at 15:30, intake exceeds output by 1200 ml
+the final fluid differential is 850 ml

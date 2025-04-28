@@ -1,0 +1,9 @@
+6:30 urine 450
+7 iv 100
+8 iv_drip 55
+8:15 ice_cream 125
+8:20 coffee_with_cream 230
+8:45 diarrhea 500
+8:51 urine 200
+9:00 iv 10
+9:30 iv 300

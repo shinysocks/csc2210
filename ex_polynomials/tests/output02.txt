@@ -1,0 +1,11 @@
+Enter a polynomial over x, q to terminate:
+Enter a second polynomial over x:
+
+The sum:
+  5
++ 8
+--------------------------------------------------
+13
+
+Enter a polynomial over x, q to terminate:
+Bye!
