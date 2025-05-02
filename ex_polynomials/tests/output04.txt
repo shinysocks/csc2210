@@ -1,2 +1,0 @@
-Enter a polynomial over x, q to terminate:
-Bye!

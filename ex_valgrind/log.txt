@@ -1,7 +1,3 @@
-makefile:17: warning: overriding recipe for target 'bad_access'
-makefile:13: warning: ignoring old recipe for target 'bad_access'
-makefile:17: warning: overriding recipe for target 'memory_leak'
-makefile:13: warning: ignoring old recipe for target 'memory_leak'
 valgrind --leak-check=full --track-origins=yes ./bad_access && echo "\n----\n\n"
 ==2682== Memcheck, a memory error detector
 ==2682== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
@@ -113,7 +109,3 @@ valgrind --leak-check=full --track-origins=yes ./double_delete && echo "\n----\n
 ==2692== 
 ==2692== For lists of detected and suppressed errors, rerun with: -s
 ==2692== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-
-----
-
-
